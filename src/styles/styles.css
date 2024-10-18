@@ -12,7 +12,6 @@ html {
 }
 
 .background-image {
-  background-image: url("./images/purple.jpg");
   background-size: cover;
   background-position: center;
   position: absolute;

@@ -60,14 +60,14 @@ const App = () => {
   //background depends on wheather conditions
   useEffect(() => {
     if (eventDayWeather) {
-      let imageSrc = "./images/blue.jpg"; // Default image
+      let imageSrc = "./images/green.jpg"; // Default image
       const description = eventDayWeather.conditions.toLowerCase();
       if (description.includes("clear")) {
         imageSrc = "./images/orange.jpg";
       } else if (description.includes("rain")) {
         imageSrc = "./images/purple.jpg";
       } else if (description.includes("partially")) {
-        imageSrc = "./images/green.jpg";
+        imageSrc = "./images/blue.jpg";
       }
       setBackgroundImage(imageSrc);
     }
